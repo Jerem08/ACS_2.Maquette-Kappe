@@ -1,0 +1,10 @@
+.container {
+  max-width: 100%;
+  color: #000;
+  background-color: grey;
+}
+
+.box-post {
+  height: min-content;
+  margin-bottom: 1rem;
+}
