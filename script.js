@@ -14,3 +14,8 @@ $(document).ready(function(){
 });
 
 /* >>>>>>>>>> PROGRESS BAR <<<<<<<<<< */
+$('.grid').masonry({
+  // options
+  itemSelector: '.grid-item',
+  columnWidth: 200
+});

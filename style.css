@@ -3,8 +3,9 @@
   color: #000;
   background-color: grey;
 }
-
-.box-post {
+.card {
   height: min-content;
   margin-bottom: 1rem;
 }
+.grid-item { width: 200px; }
+.grid-item--width2 { width: 400px; }
