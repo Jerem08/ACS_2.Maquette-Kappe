@@ -1,21 +1,41 @@
-.container {
+* { box-sizing: border-box; }
+
+body {
+  font-family: sans-serif;
+}
+
+/* ---- grid ---- */
+
+.grid {
+  background: #DDD;
   max-width: 100%;
-  color: #000;
-  background-color: grey;
-  padding: 0px 0px 0px 0px;
 }
-.card {
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-item {
+  float: left;
+  width: 250px;
+  height: min-content;
   margin: 1rem 1rem 1rem 1rem;
-  border: none;
-  font-size: 1rem;
 }
-.card-black {
-  background-color: #000;
+img {
+  height: 200px;
 }
+.grid-item--width2 { width: 200px; }
+.grid-item--height2 { height: 200px; }
+
 .card-bleu {
   background-color: #1ab5b3;
 }
-cite {
-  font-size: 1.5rem;
-  text
+.card-black {
+  background-color: #000;
+  color: #fff;
 }
