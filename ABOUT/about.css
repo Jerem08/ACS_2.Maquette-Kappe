@@ -8,9 +8,14 @@
   height: 302px;
 }
 
+
 .box2 {
-  border: 0.1rem solid;
-  border-color: #a3a3a3;
+  border: 1px solid;
+  border-color: #ececec;
+}
+
+.box2 > p {
+  margin: 1rem;
 }
 
 p, li {
@@ -21,11 +26,15 @@ p, li {
 }
 
 .bande {
+
   background-color: #1ab5b3;
+}
+
+.bande > p {
   color: #fff;
 }
 
-.bande > img {
+.bande > p > img {
   max-width: 80px;
   max-height: 80px;
 }
@@ -77,8 +86,7 @@ ul li {
 
 .image img {
   margin: 0.5rem;
-  max-width: 227px;
-  max-height: 180px;
+
 }
 /* sidebar */
 .sidenav {
@@ -223,3 +231,5 @@ top: 5px;
   right: 5px;
   top: 5px;
 }
+
+/* flip effect */
