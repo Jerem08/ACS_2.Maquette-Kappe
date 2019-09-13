@@ -7,14 +7,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title></title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="Essai.css">
+  <link rel="stylesheet" href="blog.css">
   <link rel="icon" type="image/png" href="img/development.png">
 </head>
 
 <body>
+  <!-- bar de navigation -->
+  <div id="mySidenav" class="sidenav">
+    <div class="logo-box">
+    	<a href="https://premiumlayers.net/demo/wp/kappewp" id="logo" class="logo">
+      	<img src="http://premiumlayers.net/demo/wp/kappewp/wp-content/uploads/2014/02/logo.png" alt="Kappe - Full Screen Portfolio &amp; Blog WP Theme" id="logo-image">
+    	</a>
+		</div>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a class="menu" href="#">HOME</a>
+    <a class="menu" href="../ABOUT/about.html">ABOUT US</a>
+    <a class="menu" href="#">BLOG</a>
+    <a class="menu" href="#">PAGES</a>
+    <a class="menu" href="#">CONTACT US</a>
+    <div class="social-bar">
+      <a href="#" class="fa fa-flickr"></a>
+      <a href="#" class="fa fa-google"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-pinterest"></a>
+      <a href="#" class="fa fa-dribbble"></a>
+      <a href="#" class="fa fa-reddit"></a>
+      <a href="#" class="fa fa-facebook"></a>
+    </div>
+  </div>
+  <!-- fin de la bar de navigation -->
+  <!-- button info and <nav> -->
+  <span style="cursor:pointer;z-index: 3;" id="hamburger" onclick="openNav()">&#9776;</span>
+  <div>
+    <span class="info-box"  style="cursor:pointer;z-index: 3;">🛈</span>
+  </div>
+  <!-- fin button -->
   <div class="grid">
+
     <div class="grid-item">
-      <div class="card" id="card">
+      <div class="card ml-4" id="card">
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -37,7 +68,7 @@
         <div class="card-body">
           <h4>Gallery Post Exemple</h4>
           <p class="text-secondary card-text">A man who works with his hands is alaborer; amanwho works with his hand s and his brain is acraftsman; but aman whoworks with his</p>
-          <span></span>
+          <span class="d-flex justify-content-between"><div><img src="img/comments.svg"><a href="#">comments</a></div><div><img src="img/calendar.svg"><a href="#">sept 12, 2019</a></div></span>
         </div>
       </div>
     </div>
@@ -48,19 +79,19 @@
     </div>
     <div class="grid-item">
       <div class="card-bleu" id="card">
-        <div class="card-body">
-          <p class="text-secondary card-text">Another Post where you can
+        <div class="card-body text-center">
+          <p class="card-text">Another Post where you can
           put a link to a specific website</p>
-          <a href="#"></a>
+          <a href="http://www.themeforest.net">http://www.themeforest.net</a>
         </div>
       </div>
     </div>
     <div class="grid-item">
       <div class="card-bleu" id="card">
-        <div class="card-body">
-          <p class="text-secondary card-text">Another Post where you can
+        <div class="card-body text-center">
+          <p class="card-text">Another Post where you can
           put a link to a specific website</p>
-          <a href="#"></a>
+          <a href="http://www.themeforest.net">http://www.themeforest.net</a>
         </div>
       </div>
     </div>
@@ -70,7 +101,7 @@
         <div class="card-body">
           <h4>Self-hosted video post</h4>
           <p class="text-secondary card-text">A man who works with his hands is alaborer; man who works with his hand s and his brain is acraftsman; but man who works with his</p>
-          <span></span>
+          <span class="d-flex justify-content-between"><div><img src="img/comments.svg"><a href="#">comments</a></div><div><img src="img/calendar.svg"><a href="#">sept 12, 2019</a></div></span>
         </div>
       </div>
     </div>
@@ -80,7 +111,7 @@
         <div class="card-body">
           <h4>Standard post format</h4>
           <p class="text-secondary card-text">A man who works with his hands is alaborer; amanwho works with his hand s and his brain is acraftsman; but aman whoworks with his</p>
-          <span></span>
+          <span class="d-flex justify-content-between"><div><img src="img/comments.svg"><a href="#">comments</a></div><div><img src="img/calendar.svg"><a href="#">sept 12, 2019</a></div></span>
         </div>
       </div>
     </div>
@@ -95,7 +126,7 @@
         <div class="card-body">
           <h4>Standard post format</h4>
           <p class="text-secondary card-text">A man who works with his hands is alaborer; amanwho works with his hand s and his brain is a craftsman; but amanwho works with his</p>
-          <span></span>
+          <span class="d-flex justify-content-between"><div><img src="img/comments.svg"><a href="#">comments</a></div><div><img src="img/calendar.svg"><a href="#">sept 12, 2019</a></div></span>
         </div>
       </div>
     </div>
@@ -103,16 +134,16 @@
       <div class="card-black text-white" id="card">
         <div class="card-body">
           <h3>Aside Post Format</h3>
-          <p class="text-secondary card-text">This is Photoshop's version  of Lorem IpsumProin gravida nibh vel velit auctor aliquet. Aenean sollicitudinp</p>
+          <p class="card-text">This is Photoshop's version  of Lorem IpsumProin gravida nibh vel velit auctor aliquet. Aenean sollicitudinp</p>
         </div>
       </div>
     </div>
     <div class="grid-item">
       <div class="card-black text-white" id="card">
         <div class="card-body text-center">
-          <blockquote class="text-secondary font-italic">Logic will get you from A to B. Imagination will take yoeverywhere.</blockquote>
-          <p>“</p>
-          <p>Albert Einstein</p>
+          <blockquote class="font-italic">Logic will get you from A to B. Imagination will take yoeverywhere.</blockquote>
+          <p class="text-bleu" id="grand">“</p>
+          <p class="text-bleu">Albert Einstein</p>
           <p class="text-secondary card-text"></p>
         </div>
       </div>
@@ -123,7 +154,7 @@
         <div class="card-body">
           <h4>Standard post format</h4>
           <p class="text-secondary card-text">A man who works with his hands is alaborer; amanwho works with his hand s and his brain is acraftsman; but aman whoworks with his hands and his brainand his heart is anartist</p>
-          <span></span>
+          <span class="d-flex justify-content-between"><div><img src="img/comments.svg"><a href="#">comments</a></div><div><img src="img/calendar.svg"><a href="#">sept 12, 2019</a></div></span>
         </div>
       </div>
     </div>
@@ -135,7 +166,7 @@
         <div class="card-body">
           <h4>Self-hosted video post</h4>
           <p class="text-secondary card-text">A man who works with his hands is alaborer; amanwho works with his hand s and his brain is acraftsman; but aman whoworks with his hands and his brainand his heart is anartist</p>
-          <span></span>
+          <span class="d-flex justify-content-between"><div><img src="img/comments.svg"><a href="#">comments</a></div><div><img src="img/calendar.svg"><a href="#">sept 12, 2019</a></div></span>
         </div>
       </div>
     </div>
@@ -162,7 +193,7 @@
         <div class="card-body">
           <h4>Gallery Post Exemple</h4>
           <p class="text-secondary card-text">A man who works with his hands is a laboreraman who works with his hand s and his brain is a craftsman; butman who works with his hands and his brain and his heart isaartist</p>
-          <span></span>
+          <span class="d-flex justify-content-between"><div><img src="img/comments.svg"><a href="#">comments</a></div><div><img src="img/calendar.svg"><a href="#">sept 12, 2019</a></div></span>
         </div>
       </div>
     </div>
@@ -175,20 +206,21 @@
           man who works with his hand s and his brain is a craftsman; but
           a man who works with his hands and his brain and his heart is
           an artist</p>
+          <span class="d-flex justify-content-between"><div><img src="img/comments.svg"><a href="#">comments</a></div><div><img src="img/calendar.svg"><a href="#">sept 12, 2019</a></div></span>
         </div>
       </div>
     </div>
   </div>
 
 
-<script src="https://kit.fontawesome.com/6fee70888d.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
-<script type="text/javascript" src="Essai.js">
+  <script src="https://kit.fontawesome.com/6fee70888d.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+  <script type="text/javascript" src="blog.js">
 
-</script>
+  </script>
 </body>
 
 </html>

@@ -1,70 +1,85 @@
-* { box-sizing: border-box; }
-
-body {
-  font-family: sans-serif;
-}
-
-/* ---- grid ---- */
-
-.grid {
-  background: #b4b7b8;
+.row {
   max-width: 100%;
-}
-
-/* clear fix */
-.grid:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-/* ---- .grid-item ---- */
-
-.grid-item {
-  float: left;
-  width: 250px;
-  height: min-content;
   margin: 1rem 1rem 1rem 1rem;
 }
-img {
-  height: 350px;
-}
-.grid-item--width2 { width: 200px; }
-.grid-item--height2 { height: 200px; }
 
-/* parametre card */
-.card-bleu {
+.box1 > img {
+  max-width: 100%;
+  height: 302px;
+}
+
+.box2 {
+  border: 0.1rem solid;
+  border-color: #a3a3a3;
+}
+
+p, li {
+  color: #a3a3a3;
+}
+.justify-content-between, h5, h3 {
+  color: #000;
+}
+
+.bande {
   background-color: #1ab5b3;
   color: #fff;
-  font-size: 0.9rem;
-}
-.card-black {
-  background-color: #242b2e;
-  color: #fff;
-  font-size: 0.9rem;
 }
 
-.card, .card-bleu, .card-black {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+.bande > img {
+  max-width: 80px;
+  max-height: 80px;
 }
 
-#grand {
-  font-size: 4rem;
-  height: 3rem;
+.container {
+  font-size: 1rem;
 }
 
-.text-bleu {
-  color: #1ab5b3;
-}
-.card-body > span {
-  font-size: 0.7rem;
-
-}
-.card-body > span > div > img {
-  width: 0.9rem;
-  height: 0.9rem;
+.myProgress {
+  width: 100%;
+  background-color: #ddd;
 }
 
+#myBar1 {
+  width: 89%;
+  height: 30px;
+  background-color: #1ab5b3;
+  text-align: center;
+  line-height: 30px;
+}
+
+#myBar2 {
+  width: 97%;
+  height: 30px;
+  background-color: #1ab5b3;
+  text-align: center;
+  line-height: 30px;
+}
+
+#myBar3 {
+  width: 85%;
+  height: 30px;
+  background-color: #1ab5b3;
+  text-align: center;
+  line-height: 30px;
+}
+
+#myBar4 {
+  width: 75%;
+  height: 30px;
+  background-color: #1ab5b3;
+  text-align: center;
+  line-height: 30px;
+}
+
+ul li {
+  font-size: 0.8rem;
+}
+
+.image img {
+  margin: 0.5rem;
+  max-width: 227px;
+  max-height: 180px;
+}
 /* sidebar */
 .sidenav {
   height: 100%;
@@ -207,8 +222,4 @@ top: 5px;
   position: absolute;
   right: 5px;
   top: 5px;
-}
-
-blockquote {
-  font-family: Georgia;
 }
