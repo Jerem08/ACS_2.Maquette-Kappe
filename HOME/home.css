@@ -1,11 +1,91 @@
-/*MASONRY*/
-
-.grid-item
-{
-  width: 200px;
+body {
+  font-family: "Roboto", sans-serif;
 }
 
-.grid-item--width2
-{
-  width: 400px;
+/*MASONRY*/
+
+.grid-item {
+  width: 25%; /*MODIFIED*/
+}
+
+/*OVERLAY*/
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(45, 184, 183, 0.75); /*MODIFIED*/
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  width: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  text-align: center; /*ADDED*/
+  line-height: 0.25em; /*ADDED*/
+}
+
+h2 {
+  font-size: 1.25em; /*ADDED*/
+}
+
+p span {
+  font-size: 0.75em; /*ADDED*/
+  display: inline-block; /*ADDED*/
+  padding-bottom: 1.25em; /*ADDED*/
+  border-bottom: 1px solid white; /*ADDED*/
+}
+
+i {
+  font-size: 2em; /*ADDED*/
+}
+
+a:link, a:visited {
+  color: inherit; /*ADDED*/
+}
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 1199px) {
+  .grid-item {
+    width: 33%;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .grid-item {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .grid-item {
+    width: 100%;
+  }
 }
