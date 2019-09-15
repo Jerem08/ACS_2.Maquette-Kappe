@@ -2,6 +2,7 @@
 
 body {
   font-family: sans-serif;
+  background: #b4b7b8;
 }
 
 /* ---- grid ---- */
@@ -9,6 +10,7 @@ body {
 .grid {
   background: #b4b7b8;
   max-width: 100%;
+  max-height: 100%;
 }
 
 /* clear fix */
@@ -26,11 +28,11 @@ body {
   height: min-content;
   margin: 1rem 1rem 1rem 1rem;
 }
+
 img {
   height: 350px;
 }
-.grid-item--width2 { width: 200px; }
-.grid-item--height2 { height: 200px; }
+
 
 /* parametre card */
 .card-bleu {
@@ -124,6 +126,23 @@ img {
   background-color: #30383c;
 }
 
+#mySidenav ul {
+  list-style-image:none;
+}
+
+.filter-box a {
+  font-size: 0.6rem;
+  text-decoration-style: none;
+}
+
+.filter-box h6 {
+  color: #1ab5b3;
+}
+
+.active, .button:hover {
+  color: #1ab5b3;
+}
+
 .social-bar {
 }
 
@@ -211,4 +230,60 @@ top: 5px;
 
 blockquote {
   font-family: Georgia;
+}
+
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    top: 120%;
+    right: 50%;
+    margin-left: -80px;
+    font-size: 0.7rem;
+}
+
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 90%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #555 transparent;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
 }

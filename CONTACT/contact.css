@@ -1,0 +1,157 @@
+
+#map { /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
+   height: 750px;
+   max-width: 100%;
+   max-height: 100%;
+}
+
+/* sidebar */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 999 !important;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align: right;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav .menu:hover {
+  color: #f1f1f1;
+  background-color: #25b0ae;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.logo-box {
+    padding: 30px 30px;
+    background: #fff;
+    text-align: center;
+}
+
+a.logo {
+    display: block;
+    margin-bottom: 10px;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+}
+
+.menu {
+  background-color: #30383c;
+}
+
+.social-bar {
+}
+
+.social-bar .fa {
+  display: inline-block;
+  padding: 10px;
+  font-size: 10px;
+  width: 10px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.social-bar .fa:hover {
+    opacity: 0.7;
+}
+
+.social-bar .fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.social-bar .fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.social-bar .fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.social-bar .fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+
+.social-bar .fa-dribbble {
+  background: #ea4c89;
+  color: white;
+}
+
+
+.social-bar .fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* button nav */
+
+#hamburger:hover, #hamburger:focus, .info-box:hover, .info-box:focus {
+  background-color: #1ab5b3;
+  border-radius: 5%;
+  opacity: 0.8;
+  font-size: 60px;
+  transition: all 1s;
+  padding: 1rem;
+  padding-left:1.5rem;
+  padding-right: 1.5rem;
+  color: white;
+  z-index: 998 !important;
+}
+#hamburger, .info-box {
+  font-size: 30px;
+  transition: all 1s;
+  display: block;
+  z-index: 998 !important;
+}
+
+#hamburger {
+position: absolute;
+left: 5px;
+top: 5px;
+}
+.info-box {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+/* leaflet zoom */
+.leaflet-left {
+    left: 50px;
+    z-index: 997 !important;
+}

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="author" lang="fr" content="Jérémy VION">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
+  <title>Blog</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="blog.css">
   <link rel="icon" type="image/png" href="img/development.png">
@@ -20,11 +20,19 @@
     	</a>
 		</div>
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a class="menu" href="#">HOME</a>
+    <a class="menu" href="../HOME/home.html">HOME</a>
     <a class="menu" href="../ABOUT/about.html">ABOUT US</a>
-    <a class="menu" href="#">BLOG</a>
+    <a class="menu" href="blog.html">BLOG</a>
     <a class="menu" href="#">PAGES</a>
-    <a class="menu" href="#">CONTACT US</a>
+    <a class="menu" href="../CONTACT/contact.html">CONTACT US</a>
+    <div id="filter-box" class="filter-box">
+      <h6>Filter <i class="fa fa-th-large"></i></h6>
+      <ul>
+        <a href="#" class="button but-all active">All Post</a>
+        <a href="#" class="button but-standard">Standard Post</a>
+        <a href="#" class="button but-player">Player Post</a>
+        <a href="#" class="button but-gallery">Gallery Post</a>
+    </div>
     <div class="social-bar">
       <a href="#" class="fa fa-flickr"></a>
       <a href="#" class="fa fa-google"></a>
@@ -38,13 +46,16 @@
   <!-- fin de la bar de navigation -->
   <!-- button info and <nav> -->
   <span style="cursor:pointer;z-index: 3;" id="hamburger" onclick="openNav()">&#9776;</span>
-  <div>
-    <span class="info-box"  style="cursor:pointer;z-index: 3;">🛈</span>
-  </div>
+  <span class="info-box"  style="cursor:pointer;z-index: 3;">
+    <div class="popup">🛈
+      <span class="popuptext" id="myPopup"><p>🏠<strong>Adresse:</strong> 7bis Rue du 13e de Ligne, 58000 Nevers<br>✆<strong>Tel:</strong> +33(0)3 84 76 52 44<br>📧<strong>Email:</strong> projet@onlineformapro.com</p></span>
+    </div>
+  </span>
   <!-- fin button -->
+
   <div class="grid">
 
-    <div class="grid-item">
+    <div class="grid-item gallery">
       <div class="card ml-4" id="card">
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
           <div class="carousel-inner">
@@ -72,12 +83,12 @@
         </div>
       </div>
     </div>
-    <div class="grid-item">
+    <div class="grid-item picture">
       <div class="card" id="card">
         <img class="card-img-top" class="-img" src="img/img_2.jpg" alt="">
       </div>
     </div>
-    <div class="grid-item">
+    <div class="grid-item simple">
       <div class="card-bleu" id="card">
         <div class="card-body text-center">
           <p class="card-text">Another Post where you can
@@ -86,7 +97,7 @@
         </div>
       </div>
     </div>
-    <div class="grid-item">
+    <div class="grid-item simple">
       <div class="card-bleu" id="card">
         <div class="card-body text-center">
           <p class="card-text">Another Post where you can
@@ -95,7 +106,7 @@
         </div>
       </div>
     </div>
-    <div class="grid-item">
+    <div class="grid-item player">
       <div class="card" id="card">
         <video></video>
         <div class="card-body">
@@ -105,7 +116,7 @@
         </div>
       </div>
     </div>
-    <div class="grid-item">
+    <div class="grid-item standard">
       <div class="card" id="card">
         <img class="card-img-top" src="img/img_3.jpg" alt="">
         <div class="card-body">
@@ -115,13 +126,13 @@
         </div>
       </div>
     </div>
-    <div class="grid-item">
+    <div class="grid-item picture">
       <div class="card" id="card">
         <img class="card-img-top" class="-img" src="img/img_4.jpg" alt="">
       </div>
     </div>
     <div class="grid-item">
-      <div class="card" id="card">
+      <div class="card standard" id="card">
         <img class="card-img-top" src="img/img_5.jpeg" alt="">
         <div class="card-body">
           <h4>Standard post format</h4>
@@ -130,15 +141,15 @@
         </div>
       </div>
     </div>
-    <div class="grid-item">
+    <div class="grid-item aside">
       <div class="card-black text-white" id="card">
         <div class="card-body">
-          <h3>Aside Post Format</h3>
+          <h4>Aside Post Format</h4>
           <p class="card-text">This is Photoshop's version  of Lorem IpsumProin gravida nibh vel velit auctor aliquet. Aenean sollicitudinp</p>
         </div>
       </div>
     </div>
-    <div class="grid-item">
+    <div class="grid-item simple">
       <div class="card-black text-white" id="card">
         <div class="card-body text-center">
           <blockquote class="font-italic">Logic will get you from A to B. Imagination will take yoeverywhere.</blockquote>
@@ -148,7 +159,7 @@
         </div>
       </div>
     </div>
-    <div class="grid-item">
+    <div class="grid-item standard">
       <div class="card" id="card">
         <img class="card-img-top" src="img/img_6.jpg" alt="">
         <div class="card-body">
@@ -158,7 +169,7 @@
         </div>
       </div>
     </div>
-    <div class="grid-item">
+    <div class="grid-item player">
       <div class="card" id="card">
         <video src="videofile.ogg" autoplay poster="posterimage.jpg">
 
@@ -170,7 +181,7 @@
         </div>
       </div>
     </div>
-    <div class="grid-item">
+    <div class="grid-item gallery">
       <div class="card" id="card">
         <div id="carouselExample" class="carousel slide carousel-fade" data-ride="carousel">
           <div class="carousel-inner">
@@ -197,7 +208,7 @@
         </div>
       </div>
     </div>
-    <div class="grid-item">
+    <div class="grid-item standard">
       <div class="card" id="card">
         <img class="card-img-top" src="img/img_8.png" alt="">
         <div class="card-body">
