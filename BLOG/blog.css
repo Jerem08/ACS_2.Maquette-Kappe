@@ -27,15 +27,16 @@ body {
   width: 250px;
   height: min-content;
   margin: 1rem 1rem 1rem 1rem;
+  image-resolution: from-image;
 }
 
 img {
   height: 350px;
 }
-
-
-
 /* parametre card */
+.card {
+  border: none;
+}
 .card-bleu {
   background-color: #1ab5b3;
   color: #fff;
@@ -45,6 +46,13 @@ img {
   background-color: #242b2e;
   color: #fff;
   font-size: 0.9rem;
+}
+
+.card-aside {
+  background-color: #242b2e;
+  color: #fff;
+  font-size: 0.9rem;
+  border-left: 1em solid #1ab5b3;
 }
 
 .card, .card-bleu, .card-black {
