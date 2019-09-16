@@ -34,6 +34,7 @@ img {
 }
 
 
+
 /* parametre card */
 .card-bleu {
   background-color: #1ab5b3;
@@ -146,49 +147,61 @@ img {
 .social-bar {
 }
 
-.social-bar .fa {
+.social-bar .fab {
   display: inline-block;
-  padding: 10px;
-  font-size: 10px;
+  padding: 5px;
+  font-size: 15px;
   width: 10px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
 }
 
-.social-bar .fa:hover {
+.social-bar .fab:hover {
     opacity: 0.7;
 }
 
-.social-bar .fa-facebook {
+.social-bar .fa-facebook-f {
+  width: min-content;
   background: #3B5998;
   color: white;
 }
 
 .social-bar .fa-twitter {
+  width: min-content;
   background: #55ACEE;
   color: white;
 }
 
 .social-bar .fa-google {
+  width: min-content;
   background: #dd4b39;
   color: white;
 }
 
 .social-bar .fa-pinterest {
+  width: min-content;
   background: #cb2027;
   color: white;
 }
 
 
 .social-bar .fa-dribbble {
+  width: min-content;
   background: #ea4c89;
   color: white;
 }
 
 
 .social-bar .fa-reddit {
+  width: min-content;
   background: #ff5700;
+  color: white;
+}
+
+.social-bar .fa-flickr {
+  width: min-content;
+  background: #000;
   color: white;
 }
 
@@ -286,4 +299,8 @@ blockquote {
 @keyframes fadeIn {
   from {opacity: 0;}
   to {opacity:1 ;}
+}
+
+.active {
+    color: #1ab5b3;
 }
