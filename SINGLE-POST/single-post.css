@@ -1,0 +1,139 @@
+body {
+  background: silver;
+}
+
+.container-fluid {
+  background: white;
+  width: auto;
+  margin: 2em;
+  box-shadow:  10px 0px 5px rgba(42,42,42,0.3),
+              -10px 0px 5px rgba(42,42,42,0.3),
+               0px 10px 5px rgba(42,42,42,0.3),
+              0px -10px 5px rgba(42,42,42,0.3);
+}
+
+.col-sep {
+  border-right: 1px solid #e5e5e5;
+}
+
+.row-sep {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+h1 {
+  text-align: justify;
+  font-size: 2em;
+  padding: 0.5em 0 0 0;
+}
+
+p {
+  text-align: justify;
+  font-size: large;
+  color: #a3a3a3;
+}
+
+.comment {
+  margin-top: 15px;
+  margin-bottom: 35px;
+}
+
+.avatar {
+  display: inline-block;
+  vertical-align:top;
+}
+
+#avatar1 {
+  margin-left: 0;
+}
+
+#avatar2 {
+  margin-left: 100px;
+}
+
+#avatar3 {
+  margin-left: 200px;
+}
+
+.data {
+  display: inline-block;
+  vertical-align:top;
+  margin-left: 20px;
+}
+
+.info {
+  padding-bottom: 3px;
+  border-bottom: 1px solid silver;
+  margin-bottom: 1px;
+}
+
+.author {
+  color: #3c3c3c;
+  font-size: smaller;
+  font-style: italic;
+}
+
+.timestamp {
+  color: #d1d1d1;
+  font-size: smaller;
+}
+
+.message {
+  color: #a3a3a3;
+  font-size: larger;
+}
+
+form {
+  margin-top: 1em;
+}
+
+button {
+  width: 3em;
+}
+
+.btn-primary {
+  margin-top: 1em;
+  width: 100%;
+}
+
+.input-group {
+  margin-top: 0.5em;
+  padding: 0.25em 0 0.25em 0;
+}
+
+.textarea {
+  margin-top: 0.5em;
+  padding: 0.25em 0 0.25em 0;
+}
+
+/*CAROUSEL*/
+
+ol.carousel-indicators {
+  position: absolute;
+  bottom: 1.5em;
+  width: 100%;
+  margin: 0;
+}
+
+ol.carousel-indicators li,
+ol.carousel-indicators li.active {
+  position: relative; /*BUGGED*/
+  left: 18.75em;
+  width: 1.25em;
+  height: 0.75em;
+  margin: 0.25em;
+}
+
+ol.carousel-indicators li {
+  border: 1px solid rgba(255,255,255,0.9);
+  background: rgba(0,0,0,0.9);
+}
+
+ol.carousel-indicators li:hover {
+  background: rgba(0,0,0,0.8);
+}
+
+ol.carousel-indicators li.active {
+  border: 1px solid rgba(0,0,0,0.9);
+  background: rgba(26,181,179,0.9);
+  cursor: default;
+}

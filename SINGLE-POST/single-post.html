@@ -10,9 +10,123 @@
 </head>
 
 <body>
+  <div class="container-fluid">
+    <div class="row"><!--main-->
+      <div class="col-12 col-lg-6 col-sep"><!--col1-->
+        <div class="row row-sep"><!--article-->
+          <div class="col-12">
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+                <li data-target="#carousel" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="img/photo1" alt="Sports car">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/photo2" alt="Office">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/photo1" alt="Sports car">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/photo2" alt="Office">
+                </div>
+              </div>
+            </div>
+            <div class="text">
+              <h1>Heavy Sand - Creative Photography</h1>
+              <p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
+              <p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row"><!--comment-read-->
+          <div class="col-12">
+            <h1>7 Comments</h1>
+            <div class="row comment"><!--comment1-->
+              <div class="col-12">
+                <div class="avatar" id="avatar1">
+                  <img src="img/avatar1" alt="Shane Freer">
+                </div>
+                <div class="data">
+                  <p class="info"><span class="author">ShaneFreer</span><span class="timestamp"> / 4 minutes ago</span></p>
+                  <p class="message">great post brainartworks</p>
+                </div>
+              </div>
+            </div>
+            <div class="row comment"><!--comment2-->
+              <div class="col-12">
+                <div class="avatar" id="avatar2">
+                  <img src="img/avatar2" alt="Collis Ta'eed">
+                </div>
+                <div class="data">
+                  <p class="info"><span class="author">Collis Ta'eed</span><span class="timestamp"> / 12 minutes ago</span></p>
+                  <p class="message">yeah i really like it too, very useful!</p>
+                </div>
+              </div>
+            </div>
+            <div class="row comment"><!--comment3-->
+              <div class="col-12">
+                <div class="avatar" id="avatar3">
+                  <img src="img/avatar3" alt="Jremick">
+                </div>
+                <div class="data">
+                  <p class="info"><span class="author">Jremick</span><span class="timestamp"> / 20 minutes ago</span></p>
+                  <p class="message">i found this post very useful too, the comment form works just perfect, keep it up guys :)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12"><!--comment-post-->
+            <h1>Leave a comment</h1>
+            <form class="post" action="" method="post">
+              <div class="row">
+                <div class="col-6">
+                  <div class="input-group input-group-lg">
+                    <div class="input-group-prepend">
+                      <button class="btn btn-outline-secondary" type="button"><i class="fa fa-user"></i></button>
+                    </div>
+                    <input type="text" class="form-control" name="name" placeholder="Name">
+                  </div>
+                  <div class="input-group input-group-lg">
+                    <div class="input-group-prepend">
+                      <button class="btn btn-outline-secondary" type="button"><i class="far fa-envelope"></i></button>
+                    </div>
+                    <input type="text" class="form-control" name="e-mail" placeholder="e-mail">
+                  </div>
+                  <div class="input-group input-group-lg">
+                    <div class="input-group-prepend">
+                      <button class="btn btn-outline-secondary" type="button"><i class="fa fa-link"></i></button>
+                    </div>
+                    <input type="text" class="form-control" name="website" placeholder="website">
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="input-group input-group-lg">
+                    <textarea class="form-control" name="message" placeholder="Message"></textarea>
+                    <button type="submit" class="btn btn-primary" name="submit">SEND NOW</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6"><!--col2-->
+        <p>Col2 (TODO)</p>
+      </div>
+    </div>
+  </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script><!-- bootstrap js-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script><!-- bootstrap js-->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script><!-- bootstrap js-->
+  <script src="https://kit.fontawesome.com/6fee70888d.js"></script>
 </body>
 
 </html>
