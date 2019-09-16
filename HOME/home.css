@@ -1,8 +1,19 @@
 body {
+  background: silver;
   font-family: "Roboto", sans-serif;
 }
 
 /*MASONRY*/
+
+.grid {
+  background: white;
+  width: auto;
+  margin: 2em;
+  box-shadow:  10px 0px 5px rgba(42,42,42,0.3),
+              -10px 0px 5px rgba(42,42,42,0.3),
+               0px 10px 5px rgba(42,42,42,0.3),
+              0px -10px 5px rgba(42,42,42,0.3);
+}
 
 .grid-item {
   width: 25%; /*MODIFIED*/
