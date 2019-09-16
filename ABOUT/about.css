@@ -93,7 +93,7 @@ ul li {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 10;
+  z-index: 999 !important;
   top: 0;
   left: 0;
   background-color: #111;
@@ -103,7 +103,7 @@ ul li {
   text-align: right;
 }
 
-.sidenav a {
+.sidenav > a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
@@ -131,12 +131,12 @@ ul li {
     text-align: center;
 }
 
-a.logo {
+.logo-box .logo {
     display: block;
     margin-bottom: 10px;
 }
 
-img {
+.mysidenav img {
   height: auto;
   max-width: 100%;
   vertical-align: middle;
@@ -147,52 +147,81 @@ img {
   background-color: #30383c;
 }
 
+#mySidenav ul {
+  list-style-image:none;
+}
+
+.filter-box a {
+  font-size: 0.6rem;
+  text-decoration-style: none;
+}
+
+.filter-box h6 {
+  color: #1ab5b3;
+}
+
+.active, .button:hover {
+  color: #1ab5b3;
+}
+
 .social-bar {
 }
 
-.social-bar .fa {
-  display: inline-block;
-  padding: 10px;
-  font-size: 10px;
+.social-bar .fab {
+  display: inline-block !important;
+  padding: 5px !important;
+  font-size: 15px !important;
   width: 10px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
+  text-align: center !important;
+  text-decoration: none !important;
+  margin: 5px 2px !important;
 }
 
-.social-bar .fa:hover {
+.social-bar .fab:hover {
     opacity: 0.7;
 }
 
-.social-bar .fa-facebook {
+.social-bar .fa-facebook-f {
+  width: min-content;
   background: #3B5998;
   color: white;
 }
 
 .social-bar .fa-twitter {
+  width: min-content;
   background: #55ACEE;
   color: white;
 }
 
 .social-bar .fa-google {
+  width: min-content;
   background: #dd4b39;
   color: white;
 }
 
 .social-bar .fa-pinterest {
+  width: min-content;
   background: #cb2027;
   color: white;
 }
 
 
 .social-bar .fa-dribbble {
+  width: min-content;
   background: #ea4c89;
   color: white;
 }
 
 
 .social-bar .fa-reddit {
+  width: min-content;
   background: #ff5700;
+  color: white;
+}
+
+.social-bar .fa-flickr {
+  width: min-content;
+  background: #000;
   color: white;
 }
 
@@ -212,13 +241,13 @@ img {
   padding-left:1.5rem;
   padding-right: 1.5rem;
   color: white;
-  z-index: 8;
+  z-index: 998 !important;
 }
 #hamburger, .info-box {
   font-size: 30px;
   transition: all 1s;
   display: block;
-  z-index: 8;
+  z-index: 998 !important;
 }
 
 #hamburger {
@@ -232,4 +261,62 @@ top: 5px;
   top: 5px;
 }
 
-/* flip effect */
+blockquote {
+  font-family: Georgia;
+}
+
+/* Popup container - can be anything you want */
+.popup {
+  position: relative !important;
+  display: inline-block !important;
+  cursor: pointer;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden !important;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center !important;
+    border-radius: 6px !important;
+    padding: 8px 0 !important;
+    position: absolute !important;
+    z-index: 999 !important;
+    top: 120% !important;
+    right: 50% !important;
+    margin-left: -80px !important;
+    font-size: 0.7rem !important;
+}
+
+.popup .show {
+    visibility: visible !important;
+    -webkit-animation: fadeIn 1s !important;
+    animation: fadeIn 1s !important;
+}
+
+.popup .popuptext::after {
+    content: "";
+    position: absolute !important;
+    bottom: 100%;
+    left: 90%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #555 transparent !important;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
