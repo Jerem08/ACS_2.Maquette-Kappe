@@ -9,7 +9,8 @@ body {
   background: silver;
   width: auto;
   margin: 2em;
-  box-shadow:  10px 0px 5px rgba(42,42,42,0.3),
+  box-shadow:
+  10px 0px 5px rgba(42,42,42,0.3),
   -10px 0px 5px rgba(42,42,42,0.3),
   0px 10px 5px rgba(42,42,42,0.3),
   0px -10px 5px rgba(42,42,42,0.3);
@@ -102,6 +103,7 @@ a:link, a:visited {
 }
 
 /* sidebar */
+
 .sidenav {
   height: 100%;
   width: 0;
@@ -218,13 +220,11 @@ a:link, a:visited {
   color: white;
 }
 
-
 .social-bar .fa-dribbble {
   width: min-content;
   background: #ea4c89;
   color: white;
 }
-
 
 .social-bar .fa-reddit {
   width: min-content;
@@ -244,6 +244,7 @@ a:link, a:visited {
 }
 
 /* button nav */
+
 #hamburger:hover, #hamburger:focus, .info-box:hover, .info-box:focus {
   background-color: #1ab5b3;
   border-radius: 5%;
@@ -256,6 +257,7 @@ a:link, a:visited {
   color: white;
   z-index: 998 !important;
 }
+
 #hamburger, .info-box {
   font-size: 30px;
   transition: all 1s;
@@ -268,6 +270,7 @@ a:link, a:visited {
   left: 5px;
   top: 5px;
 }
+
 .info-box {
   position: absolute;
   right: 5px;
@@ -279,6 +282,7 @@ blockquote {
 }
 
 /* Popup container - can be anything you want */
+
 .popup {
   position: relative !important;
   display: inline-block !important;
@@ -290,6 +294,7 @@ blockquote {
 }
 
 /* The actual popup */
+
 .popup .popuptext {
   visibility: hidden !important;
   width: 160px;
@@ -324,6 +329,7 @@ blockquote {
 }
 
 /* Add animation (fade in the popup) */
+
 @-webkit-keyframes fadeIn {
   from {opacity: 0;}
   to {opacity: 1;}
