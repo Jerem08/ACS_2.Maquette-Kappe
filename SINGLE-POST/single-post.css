@@ -8,7 +8,8 @@ body {
   width: auto;
   margin: 2em;
   padding: 2em;
-  box-shadow:  10px 0px 5px rgba(42,42,42,0.3),
+  box-shadow:
+  10px 0px 5px rgba(42,42,42,0.3),
   -10px 0px 5px rgba(42,42,42,0.3),
   0px 10px 5px rgba(42,42,42,0.3),
   0px -10px 5px rgba(42,42,42,0.3);
@@ -22,13 +23,10 @@ body {
 #col1 {
   margin: 0;
   padding: 0 2em 0 0;
-}
-
-.col-sep {
   border-right: 1px solid #e5e5e5;
 }
 
-.row-sep {
+#article {
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -67,7 +65,7 @@ ol.carousel-indicators li.active {
 h1 {
   text-align: justify;
   font-size: 2em;
-  padding: 0.5em 0 0 0;
+  padding: 0.5em 0 0.2em 0;
 }
 
 p {
@@ -120,10 +118,15 @@ p {
   margin-left: 0;
 }
 
+.avatar img {
+  width: 80px;
+  height: 80px;
+}
+
 .data {
   display: inline-block;
   vertical-align:top;
-  margin-left: 20px;
+  margin: -5px 0 0 20px;
 }
 
 .info {
@@ -148,10 +151,6 @@ p {
   font-size: larger;
 }
 
-form {
-  margin-top: 0.5em;
-}
-
 form .input-group {
   margin-top: 0.5em;
   padding: 0.25em 0 0.25em 0;
@@ -173,7 +172,7 @@ form i {
   margin: auto;
 }
 
-textarea.form-control {
+form textarea {
   padding: 0.25em 0 0.25em 0;
 }
 
@@ -199,7 +198,51 @@ textarea.form-control {
   font-weight: lighter;
 }
 
+/*RESPONSIVE*/
+
+@media screen and (max-width: 1499px) {
+  #avatar1, #avatar2, #avatar3, #avatar4, #avatar5, #avatar6, #avatar7 {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  #col1 {
+    padding-right: 0;
+    border-right: none;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  ol.carousel-indicators {
+    display: none;
+  }
+  h1 {
+    font-size: medium;
+  }
+  p, .form-control::placeholder {
+    font-size: small !important;
+  }
+  .comment .nowrap {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .comment .nowrap .avatar {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .comment .nowrap .data {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px 0 -35px 0;
+  }
+}
+
 /* sidebar */
+
 .sidenav {
   height: 100%;
   width: 0;
@@ -316,13 +359,11 @@ textarea.form-control {
   color: white;
 }
 
-
 .social-bar .fa-dribbble {
   width: min-content;
   background: #ea4c89;
   color: white;
 }
-
 
 .social-bar .fa-reddit {
   width: min-content;
@@ -342,6 +383,7 @@ textarea.form-control {
 }
 
 /* button nav */
+
 #hamburger:hover, #hamburger:focus, .info-box:hover, .info-box:focus {
   background-color: #1ab5b3;
   border-radius: 5%;
@@ -354,6 +396,7 @@ textarea.form-control {
   color: white;
   z-index: 998 !important;
 }
+
 #hamburger, .info-box {
   font-size: 30px;
   transition: all 1s;
@@ -366,6 +409,7 @@ textarea.form-control {
   left: 5px;
   top: 5px;
 }
+
 .info-box {
   position: absolute;
   right: 5px;
@@ -377,6 +421,7 @@ blockquote {
 }
 
 /* Popup container - can be anything you want */
+
 .popup {
   position: relative !important;
   display: inline-block !important;
@@ -388,6 +433,7 @@ blockquote {
 }
 
 /* The actual popup */
+
 .popup .popuptext {
   visibility: hidden !important;
   width: 160px;
@@ -422,6 +468,7 @@ blockquote {
 }
 
 /* Add animation (fade in the popup) */
+
 @-webkit-keyframes fadeIn {
   from {opacity: 0;}
   to {opacity: 1;}
